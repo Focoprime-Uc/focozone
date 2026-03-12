@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.login-container h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #ff2c2c;
+}
+
+.login-btn, .social-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.login-btn {
+  background: #ff2c2c;
+  color: white;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.social-btn.google {
+  background: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+}
+
+.social-btn.apple {
+  background: #000;
+  color: #fff;
+}
+
+.social-btn i {
+  font-size: 18px;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.create-account a {
+  color: #ff2c2c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.photo-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.photo-upload input[type="file"] {
+  display: none;
+}
+
+.photo-upload label {
+  width: 80px;
+  height: 80px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 28px;
+  color: #999;
+  border: 2px dashed #ccc;
+  transition: 0.2s;
+}
+
+.photo-upload label:hover {
+  border-color: #ff2c2c;
+  color: #ff2c2c;
+  }
