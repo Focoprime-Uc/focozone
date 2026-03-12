@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vilanculos+ | Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../estilos/menu.css">
+
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Iniciar Sessão</h2>
+
+  <!-- Login com Email -->
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="seu@email.com">
+  </div>
+
+  <div class="input-group">
+    <label for="password">Senha</label>
+    <input type="password" id="password" placeholder="••••••••">
+  </div>
+
+  <button class="login-btn">Iniciar Sessão</button>
+
+  <!-- Login Social -->
+  <button class="social-btn google"><i class="ri-google-fill"></i> Continuar com Google</button>
+  <button class="social-btn apple"><i class="ri-apple-fill"></i> Continuar com Apple</button>
+
+  <!-- Criar Conta -->
+  <div class="create-account">
+    Não tem conta? <a href="#createAccount" onclick="showCreateAccount()">Criar Conta</a>
+  </div>
+
+  <div id="createAccount" style="display:none; margin-top:20px;">
+    <div class="photo-upload">
+      <label for="profilePhoto"><i class="ri-add-line"></i></label>
+      <input type="file" id="profilePhoto" accept="image/*">
+    </div>
+
+    <div class="input-group">
+      <label for="newName">Nome</label>
+      <input type="text" id="newName" placeholder="Seu nome">
+    </div>
+
+    <div class="input-group">
+      <label for="newEmail">Email</label>
+      <input type="email" id="newEmail" placeholder="seu@email.com">
+    </div>
+
+    <div class="input-group">
+      <label for="newPassword">Senha</label>
+      <input type="password" id="newPassword" placeholder="••••••••">
+    </div>
+
+    <button class="login-btn">Criar Conta</button>
+  </div>
+</div>
+
+<script>
+  function showCreateAccount() {
+  document.getElementById('createAccount').style.display = 'block';
+}
+</script>
+
+<script type="module" src="login.js"></script>
+
+</body>
+</html>
