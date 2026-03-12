@@ -1,0 +1,518 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background: white;
+height:100vh;
+}
+
+/* Perfil.css do usuário */
+.container{
+  padding: 10px;
+  border-radius:0;
+  background:transparent;
+  margin-top:110px;
+}
+
+/* titulo */
+
+.title{
+font-size:24px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+/* fotos */
+
+.photos{
+display:flex;
+gap:10px;
+}
+
+.main-photo{
+flex:2;
+position:relative;
+}
+
+.main-photo img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.badge{
+position:absolute;
+bottom:8px;
+left:8px;
+background:#000;
+color:white;
+font-size:10px;
+padding:4px 8px;
+border-radius:8px;
+}
+
+.side-photos{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.side-photos img{
+width:100%;
+height:75px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.add-photo{
+height:75px;
+border:2px dashed #ccc;
+border-radius:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#999;
+font-size:12px;
+flex-direction:column;
+}
+
+/* info */
+
+.name{
+margin-top:15px;
+font-size:20px;
+font-weight:600;
+}
+
+.location{
+color:#777;
+font-size:13px;
+margin-top:3px;
+}
+
+/* botão */
+
+.edit-btn{
+margin-top:15px;
+background:#ff2c2c;
+color:white;
+border:none;
+padding:12px;
+border-radius:12px;
+font-weight:500;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+cursor:pointer;
+}
+
+/* sobre mim */
+
+.card{
+margin-top:15px;
+background:#f7f7f7;
+padding:15px;
+border-radius:15px;
+}
+
+.card-title{
+font-weight:600;
+margin-bottom:5px;
+}
+
+/* menu inferior */
+
+.bottom-nav{
+position:fixed;
+top:60px; /* altura do header */
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-around;
+
+background:white;
+border-bottom:1px solid #eee;
+padding:10px 0;
+
+z-index:9;
+}
+
+.nav-item{
+text-align:center;
+font-size:12px;
+color:#777;
+}
+
+.nav-item i{
+font-size:22px;
+display:block;
+}
+
+.active{
+color:#ff2c2c;
+}
+
+.chat-box{
+width: 100%;
+height: 100%;
+background:white;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+}
+
+/* header */
+
+.chat-header{
+display:flex;
+align-items:center;
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
+.chat-header img{
+width:40px;
+height:40px;
+border-radius:50%;
+margin-right:10px;
+}
+
+.chat-header .name{
+font-weight:600;
+}
+
+.chat-header .status{
+font-size:12px;
+color:green;
+}
+
+/* messages */
+
+.chat-messages{
+flex:1;
+padding:15px;
+overflow-y:auto;
+background:#f7f7f7;
+}
+
+.message{
+max-width:70%;
+padding:10px 14px;
+border-radius:15px;
+margin-bottom:10px;
+font-size:14px;
+}
+
+.received{
+background:#eaeaea;
+}
+
+.sent{
+background:#ff2c2c;
+color:white;
+margin-left:auto;
+}
+
+/* input */
+
+.chat-input{
+display:flex;
+align-items:center;
+padding:10px;
+border-top:1px solid #eee;
+background:white;
+}
+
+.chat-input input{
+flex:1;
+border:none;
+outline:none;
+padding:10px;
+border-radius:20px;
+background:#f2f2f2;
+}
+
+.send-btn{
+width:40px;
+height:40px;
+background:#ff2c2c;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-left:10px;
+color:white;
+font-size:20px;
+cursor:pointer;
+}
+
+
+
+
+
+
+.page{
+display:none;
+flex-direction:column;
+}
+
+.page.active{
+display:flex;
+}
+
+/* feed */
+
+.feed-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+margin-top:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.05);
+}
+
+.feed-header{
+display:flex;
+align-items:center;
+padding:10px;
+gap:10px;
+}
+
+.feed-header img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+
+.feed-name{
+font-weight:600;
+}
+
+.feed-location{
+font-size:12px;
+color:#777;
+}
+
+.feed-photo{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.feed-actions{
+display:flex;
+gap:15px;
+padding:10px;
+font-size:22px;
+}
+
+.feed-text{
+padding:0 10px 10px 10px;
+font-size:14px;
+}
+
+/* perfis comunidade */
+
+.profiles{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:10px;
+}
+
+.profile-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+background:#f7f7f7;
+padding:15px;
+border-radius:15px;
+text-align:center;
+gap:8px;
+}
+
+.profile-photo{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.profile-info{
+flex:1;
+}
+
+.profile-name{
+font-weight:600;
+}
+
+.profile-location{
+font-size:12px;
+color:#777;
+}
+
+.profile-actions{
+display:flex;
+gap:10px;
+margin-top:6px;
+}
+
+.add-btn{
+background:#ff2c2c;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:8px;
+font-size:12px;
+cursor:pointer;
+}
+
+.msg-btn{
+background:#eee;
+border:none;
+padding:6px 10px;
+border-radius:8px;
+font-size:12px;
+cursor:pointer;
+}
+
+.profile-email{
+font-size:12px;
+color:#555;
+}
+
+/* bairo */
+.online{
+width:10px;
+height:10px;
+background:#00c853;
+border-radius:50%;
+display:inline-block;
+margin-left:5px;
+}
+
+.offline{
+width:10px;
+height:10px;
+background:#aaa;
+border-radius:50%;
+display:inline-block;
+margin-left:5px;
+}
+
+.profile-joined{
+font-size:11px;
+color:#999;
+}
+
+
+/* header moderno estilo openai */
+
+.top-header{
+position:fixed;
+width: 100%;
+top:0;
+background:white;
+display:flex;
+align-items:center;
+gap:10px;
+padding: 15px;
+border-bottom:1px solid #eee;
+z-index:10;
+}
+
+/* botão menu */
+
+.menu-btn{
+font-size:24px;
+cursor:pointer;
+}
+
+/* pesquisa */
+
+.search-box{
+flex:1;
+display:flex;
+align-items:center;
+background:#f3f3f3;
+border-radius:12px;
+padding:6px 10px;
+gap:6px;
+}
+
+.search-box i{
+color:#777;
+}
+
+.search-box input{
+border:none;
+outline:none;
+background:transparent;
+width:100%;
+font-size:13px;
+}
+
+/* avatar usuario */
+
+.user-avatar{
+width:35px;
+height:35px;
+border-radius:50%;
+object-fit:cover;
+cursor:pointer;
+}
+
+/* progress bar */
+
+.progress-bar{
+position:fixed;
+top:60px;
+left:0;
+width:0%;
+height:3px;
+background:#ff2c2c;
+z-index:20;
+transition:width 0.4s ease;
+}
+
+/* animação das páginas */
+
+.page{
+display:none;
+flex-direction:column;
+opacity:0;
+transform:translateY(15px);
+transition:0.3s;
+}
+
+.page.active{
+display:flex;
+opacity:1;
+transform:translateY(0);
+}
+
+/* nav ativo */
+
+.nav-item{
+text-align:center;
+font-size:12px;
+color:#777;
+cursor:pointer;
+transition:0.2s;
+}
+
+.nav-item i{
+font-size:22px;
+display:block;
+}
+
+.nav-item.active{
+color:#ff2c2c;
+  }
