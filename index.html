@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vilanculos+</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="estilos/menu.css">
+
+</head>
+
+<body>
+  
+  <!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- MENU LATERAL -->
+<div class="side-menu" id="sideMenu">
+
+<div class="menu-header">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<div>
+<div class="menu-name">Marcelo</div>
+<div class="menu-email">marcelo@email.com</div>
+</div>
+</div>
+
+<div class="menu-list">
+
+<div class="menu-item">
+<i class="ri-home-5-line"></i>
+<span>Início</span>
+</div>
+
+<div class="menu-item">
+<i class="ri-user-3-line"></i>
+<span>Perfil</span>
+</div>
+
+<div class="menu-item">
+<i class="ri-user-add-line"></i>
+<span>Amigos</span>
+</div>
+
+<div class="menu-item">
+<i class="ri-chat-3-line"></i>
+<span>Mensagens</span>
+</div>
+
+<div class="menu-item">
+<i class="ri-notification-3-line"></i>
+<span>Notificações</span>
+</div>
+
+</div>
+
+<div class="menu-bottom">
+
+<div class="menu-item logout">
+<i class="ri-user-settings-line"></i>
+<span>Personalizar Perfil</span>
+</div>
+
+</div>
+
+</div>
+  
+  <header class="top-header">
+
+  <!-- Botão de menu -->
+  <div class="menu-btn">
+    <i class="ri-menu-line"></i>
+  </div>
+
+  <!-- Barra de pesquisa -->
+  <div class="search-box">
+    <i class="ri-search-line"></i>
+    <input type="text" placeholder="Procurar pessoas em Vilanculos">
+  </div>
+
+  <!-- Avatar do usuário -->
+  <img class="user-avatar" src="https://randomuser.me/api/portraits/men/32.jpg">
+
+</header>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- MENU -->
+
+<div class="bottom-nav">
+
+<div class="nav-item active" onclick="openPage('feedPage', this)">
+<i class="ri-fire-line"></i>
+Feeds
+</div>
+
+<div class="nav-item" onclick="openPage('friendsPage', this)">
+<i class="ri-user-add-line"></i>
+Amigos
+</div>
+
+<div class="nav-item" onclick="openPage('msgPage', this)">
+<i class="ri-chat-3-line"></i>
+Mensagens
+</div>
+
+<div class="nav-item" onclick="openPage('profilePage', this)">
+<i class="ri-notification-3-line"></i>
+Notificações
+</div>
+
+</div>
+
+<div class="container">
+
+<!-- FEED -->
+
+<div id="feedPage" class="page active">
+
+<div class="title">Feed</div>
+
+<!-- posts do feed aqui -->
+
+</div>
+
+<!-- AMIGOS -->
+
+<div id="friendsPage" class="page">
+
+<div class="title">Amigos</div>
+
+<div class="profiles">
+
+<div class="profile-card">
+
+<img class="profile-photo" src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<div class="profile-info">
+
+<div class="profile-name">Melania, 18
+<span class="offline"></span>
+</div>
+
+<div class="profile-location">
+<i class="ri-map-pin-line"></i> Vilanculos
+</div>
+
+<div class="profile-email">
+<i class="ri-mail-line"></i> melania@email.com
+</div>
+
+<div class="profile-joined">
+<i class="ri-time-line"></i> Entrou em 2024
+</div>
+
+</div>
+
+<div class="profile-actions">
+
+<button class="add-btn">
+<i class="ri-user-add-line"></i>
+Adicionar
+</button>
+
+<button class="msg-btn">
+<i class="ri-chat-3-line"></i>
+Mensagem
+</button>
+
+</div>
+
+</div>
+
+
+<div class="profile-card">
+
+<img class="profile-photo" src="https://randomuser.me/api/portraits/men/45.jpg">
+
+<div class="profile-info">
+
+<div class="profile-name">
+Carlos, 24
+<span class="online"></span>
+</div>
+
+<div class="profile-location">
+<i class="ri-map-pin-line"></i> Vilanculos
+</div>
+
+<div class="profile-email">
+<i class="ri-mail-line"></i> carlos@email.com
+</div>
+
+<div class="profile-joined">
+<i class="ri-time-line"></i> Entrou em 2024
+</div>
+
+</div>
+
+<div class="profile-actions">
+
+<button class="add-btn">
+<i class="ri-user-add-line"></i>
+Adicionar
+</button>
+
+<button class="msg-btn">
+<i class="ri-chat-3-line"></i>
+Mensagem
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--- MENSAGENS --->
+<div id="msgPage" class="page">
+
+<div class="title">Feed</div>
+
+<!-- posts do feed aqui -->
+
+</div>
+
+
+<!-- PERFIL -->
+
+<div id="profilePage" class="page">
+
+<div class="title">Perfil</div>
+
+<div class="photos">
+
+<div class="main-photo">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<div class="badge">PRINCIPAL</div>
+</div>
+
+<div class="side-photos">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+
+<div class="add-photo">
+<i class="ri-add-line"></i>
+Add
+</div>
+
+</div>
+
+</div>
+
+<div class="name">
+Marcelo, 23 <i class="ri-verified-badge-fill" style="color:#1da1f2"></i>
+</div>
+
+<div class="location">
+<i class="ri-map-pin-line"></i> Beira, Sofala
+</div>
+
+<button class="edit-btn">
+<i class="ri-pencil-line"></i>
+Editar Perfil
+</button>
+
+<div class="card">
+
+<div class="card-title">
+Sobre Mim
+</div>
+
+<div>
+Sou Programador FullStack
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<script type="module" src="auth/user.js"></script>
+<script src="script.js"></script>
+
+</body>
+  </html>
